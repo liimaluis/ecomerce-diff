@@ -1,9 +1,22 @@
 import React from "react";
 
-export default function Formulogin({ email, senha }) {
+export default function Formulogin() {
   return;
-  <tr>
-    <td>{email}</td>
-    <td>{senha}</td>
-  </tr>;
+  <div>
+    <input
+      type="text"
+      className="form-control"
+      placeholder="E-mail"
+      id="email"
+      name="email"
+    />
+
+    <input
+      type="password"
+      className="form-control"
+      placeholder="Password"
+      id="password"
+      name="password"
+    />
+  </div>;
 }
