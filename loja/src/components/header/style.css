@@ -1,0 +1,24 @@
+.bs-example {
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background: #00bfff;
+  }
+  
+  .dropdown-toggle {
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  #products-menu a{
+    margin: 20px 5px 5px 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.5);
+  }

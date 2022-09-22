@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import facebook from "../../assets/icons/facebook.svg";
+import whatsapp from "../../assets/icons/whatsapp.svg";
+import instagram from "../../assets/icons/instagram.svg";
 
 export default function Footer() {
   return (
