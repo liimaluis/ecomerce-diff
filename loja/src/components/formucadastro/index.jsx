@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "./formucadastro.css";
 
 export default function Formucadastro() {
   return (
@@ -23,7 +25,7 @@ export default function Formucadastro() {
       </fieldset>
       <button>Submit</button>
       <button type="button" onClick={() => this.changeView("logIn")}>
-        Have an Account?
+        <Link to="/login">Have an Account?</Link>
       </button>
     </form>
   );

@@ -1,7 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Formulogin from './components/formulogin';
-import Login from './pages/login';
 import Router from './routes';
 
 

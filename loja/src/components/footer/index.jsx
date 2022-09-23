@@ -16,7 +16,7 @@ export default function Footer() {
           <Link to="" className="me-4 text-reset">
             <i
               className="whatsapp"
-              src="./assets/whatsapp.svg"
+              src="../../assets/whatsapp.svg"
               alt="whatsapp"
             ></i>
           </Link>
@@ -76,7 +76,7 @@ export default function Footer() {
       </section>
 
       <div
-        class="text-center p-4"
+        className="text-center p-4"
         style="background-color: rgba(0, 0, 0, 0.05);"
       >
         ©️ Copyright:

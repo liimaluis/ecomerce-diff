@@ -1,52 +1,33 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "./formulogin.css";
 
 export default function Formulogin() {
   return (
     <form>
-      <h2>Welcome Back!</h2>
+      <h2>Bem vindo Novamente!</h2>
       <fieldset>
-        <legend>Log In</legend>
+        <legend>Login</legend>
         <ul>
           <li>
-            <label for="username">Username:</label>
+            <label for="username">Email:</label>
             <input type="text" id="username" required />
           </li>
           <li>
-            <label for="password">Password:</label>
+            <label for="password">Senha:</label>
             <input type="password" id="password" required />
           </li>
           <li>
             <i />
             <a onClick={() => this.changeView("PWReset")} href="#">
-              Forgot Password?
+              Esqueceu a senha?
             </a>
           </li>
         </ul>
       </fieldset>
       <button>Login</button>
       <button type="button" onClick={() => this.changeView("signUp")}>
-        Create an Account
-      </button>
-    </form>
-  );
-  return (
-    <form>
-      <h2>Reset Password</h2>
-      <fieldset>
-        <legend>Password Reset</legend>
-        <ul>
-          <li>
-            <em>A reset link will be sent to your inbox!</em>
-          </li>
-          <li>
-            <label for="email">Email:</label>
-            <input type="email" id="email" required />
-          </li>
-        </ul>
-      </fieldset>
-      <button>Send Reset Link</button>
-      <button type="button" onClick={() => this.changeView("logIn")}>
-        Go Back
+        <Link to="/cadastro">Cadastre-se</Link>
       </button>
     </form>
   );
