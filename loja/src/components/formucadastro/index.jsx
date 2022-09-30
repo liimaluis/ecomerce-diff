@@ -5,9 +5,9 @@ import "./formucadastro.css";
 export default function Formucadastro() {
   return (
     <form>
-      <h2>Sign Up!</h2>
+      <h2>Cadastre-se!</h2>
       <fieldset>
-        <legend>Create Account</legend>
+        <legend>Criar Conta</legend>
         <ul>
           <li>
             <label for="username">Username:</label>

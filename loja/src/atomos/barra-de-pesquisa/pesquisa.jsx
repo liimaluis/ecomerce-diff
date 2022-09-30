@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+
 export default function Pesquisa() {
   return (
     <div className="wrap">

@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <div className="bs-example">
       <ul id="nav" className="nav nav-pills clearfix right" role="tablist">
-        <li class="dropdown">
+        <li className="dropdown">
           <a href="#" className="dropdown-toggle" data-toggle="dropdown">
             Camisetas
           </a>

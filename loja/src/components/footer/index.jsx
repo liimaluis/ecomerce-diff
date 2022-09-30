@@ -14,26 +14,14 @@ export default function Footer() {
 
         <div>
           <Link to="" className="me-4 text-reset">
-            <i
-              className="whatsapp"
-              src="../../assets/whatsapp.svg"
-              alt="whatsapp"
-            ></i>
+            <i className="whatsapp" src={whatsapp} alt="whatsapp"></i>
           </Link>
           <Link to="" className="me-4 text-reset">
-            <i
-              className="facebook"
-              src="./assets/facebook.svg"
-              alt="facebook"
-            ></i>
+            <i className="facebook" src={facebook} alt="facebook"></i>
           </Link>
 
           <Link to="" className="me-4 text-reset">
-            <i
-              className="instagram"
-              src="./assets/icon/instagram.svg"
-              alt="instagram"
-            ></i>
+            <i className="instagram" src={instagram} alt="instagram"></i>
           </Link>
         </div>
       </section>
@@ -77,7 +65,7 @@ export default function Footer() {
 
       <div
         className="text-center p-4"
-        style="background-color: rgba(0, 0, 0, 0.05);"
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
       >
         ©️ Copyright:
       </div>
