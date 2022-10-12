@@ -4,28 +4,48 @@ import "./formucadastro.css";
 
 export default function Formucadastro() {
   return (
-    <form>
-      <h2>Cadastre-se!</h2>
-      <fieldset>
+    <form className="formCadastro">
+      <h2 className="h2Cadastro">Cadastre-se!</h2>
+      <fieldset className="fieldCadastro">
         <legend>Criar Conta</legend>
-        <ul>
-          <li>
-            <label for="username">Username:</label>
-            <input type="text" id="username" required />
+        <ul className="ulCadastro">
+          <li className="liCadastro">
+            <label className="labelCadastro" for="username">
+              Username:
+            </label>
+            <input
+              className="inputCadastro"
+              type="text"
+              id="username"
+              required
+            />
           </li>
-          <li>
-            <label for="email">Email:</label>
-            <input type="email" id="email" required />
+          <li className="liCadastro">
+            <label className="labelCadastro" for="email">
+              Email:
+            </label>
+            <input className="inputCadastro" type="email" id="email" required />
           </li>
-          <li>
-            <label for="password">Password:</label>
-            <input type="password" id="password" required />
+          <li className="liCadastro">
+            <label className="labelCadastro" for="password">
+              Password:
+            </label>
+            <input
+              className="inputCadastro"
+              type="password"
+              id="password"
+              required
+            />
           </li>
         </ul>
       </fieldset>
-      <button>Submit</button>
-      <button type="button" onClick={() => this.changeView("logIn")}>
-        <Link to="/login">Have an Account?</Link>
+      <button className="btnCadastro">Cadastre-se</button>
+      <button
+        className="btnCadastro"
+        type="button"
+        onClick={() => this.changeView("logIn")}
+      >
+        <Link to="/login">Já tem uma conta?</Link>
       </button>
     </form>
   );

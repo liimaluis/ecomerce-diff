@@ -4,20 +4,29 @@ import "./formulogin.css";
 
 export default function Formulogin() {
   return (
-    <form>
-      <h2>Bem vindo Novamente!</h2>
-      <fieldset>
+    <form className="formuLogin">
+      <h2 className="h2Login">Bem vindo Novamente!</h2>
+      <fieldset className="fieldsetLogin">
         <legend>Login</legend>
-        <ul>
-          <li>
-            <label for="username">Email:</label>
-            <input type="text" id="username" required />
+        <ul className="ulLogin">
+          <li className="liLogin">
+            <label className="labelLogin" for="username">
+              Email:
+            </label>
+            <input className="inputLogin" type="text" id="username" required />
           </li>
-          <li>
-            <label for="password">Senha:</label>
-            <input type="password" id="password" required />
+          <li className="liLogin">
+            <label className="labelLogin" for="password">
+              Senha:
+            </label>
+            <input
+              className="inputLogin"
+              type="password"
+              id="password"
+              required
+            />
           </li>
-          <li>
+          <li className="liLogin">
             <i />
             <a onClick={() => this.changeView("PWReset")} href="#">
               Esqueceu a senha?
@@ -25,8 +34,12 @@ export default function Formulogin() {
           </li>
         </ul>
       </fieldset>
-      <button>Login</button>
-      <button type="button" onClick={() => this.changeView("signUp")}>
+      <button className="btnLogin">Login</button>
+      <button
+        className="btnlogin"
+        type="button"
+        onClick={() => this.changeView("signUp")}
+      >
         <Link to="/cadastro">Cadastre-se</Link>
       </button>
     </form>

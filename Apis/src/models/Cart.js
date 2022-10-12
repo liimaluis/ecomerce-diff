@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const Schema = new mongoose.Schema({
-    produtos:[{
+    products:[{
         type: mongoose.Schema.Types.ObjectId,
         ref: "produto"
     }],
@@ -15,7 +15,7 @@ const Schema = new mongoose.Schema({
             required: true
         },
         numero :{
-            type: String,
+            type: Number,
             required: true
         },
         cidade:{
@@ -26,10 +26,10 @@ const Schema = new mongoose.Schema({
     pagamento:{
         cartao:{
             number:{
-                type: String,
+                type: Number,
             },
             cvv:{
-                type: String,
+                type: Number,
             }
         }
     }

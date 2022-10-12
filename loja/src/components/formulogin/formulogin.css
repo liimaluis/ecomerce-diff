@@ -1,4 +1,4 @@
-form {
+.formuLogin {
     width: 30%;
     text-align: center;
     grid-column: 2;
@@ -10,8 +10,7 @@ form {
     background-color: #00BFFF;
     border-radius: 10px
 }
-
-h2 {
+.h2Login {
     margin-bottom: 5px;
     text-align: center;
     text-shadow: 0 4px 16px #fff;
@@ -19,7 +18,7 @@ h2 {
     font-weight: 100;
   }
 
-fieldset {
+.fieldsetLogin {
     margin: 0;
     background-color:  rgb(241, 217, 0);
     border: none;
@@ -29,11 +28,11 @@ fieldset {
       border-radius: 5px;
     }
 
-ul {
+.ulLogin {
 margin: 0;
 padding: 0;}
 
-li {
+.liLogin {
 display: grid;
 align-items: center;
 margin: 10px;}
@@ -44,18 +43,18 @@ text-align: center;
 padding: 5px;
         }
 
-label {
+.labelLogin {
 text-align: left;
 padding-bottom: 2px;
         }
 
-input {
+.inputLogin {
 padding: 5px;
 border: 1px solid #ddd;
 border-radius: 5px;
         }
 
-  button {
+  .btnLogin {
     padding: 10px;
     border:1px solid rgba(0,0,0,0);
     border-radius: 5px;
