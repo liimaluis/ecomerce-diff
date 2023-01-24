@@ -4,11 +4,11 @@ const LoginController ={
      
     async creatSession(req, res){
 
-        const { username } = req.body
+        const { email } = req.body
 
         try {
 
-            const user = await User.findOne({ username })
+            const user = await User.findOne({ email })
             return res.status(200).json(user)
             
         } catch (error) {

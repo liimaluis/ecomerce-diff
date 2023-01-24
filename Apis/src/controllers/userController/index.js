@@ -14,7 +14,7 @@ const userController = {
 
         } catch(error){
 
-            return res.status(400).json(err)
+            return res.status(400).json(error)
 
         }
     },
@@ -45,6 +45,21 @@ const userController = {
         } catch(error){
 
             return res.status(400).send(error)
+        }
+    },
+
+    async deleteUserById (req, res){
+        const { user_id } = req.params
+        
+        try {
+
+            const deleteuser = await User.findByIdAndDelete(user_id)
+            return res.status(200).json(deleteuser)
+            
+        } catch (error) {
+
+            return res.status(400).json(error)
+            
         }
     }
 }

@@ -43,7 +43,7 @@ const ProductController ={
         try {
 
             const deleteProduct = await Product.findByIdAndDelete(product_id)
-            return res.status(200).json(updateProduct)
+            return res.status(200).json(deleteProduct)
             
         } catch (error) {
 

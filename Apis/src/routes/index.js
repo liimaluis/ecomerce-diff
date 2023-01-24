@@ -16,8 +16,9 @@ routes.get('/', (req, res) => {
 routes.post('/users', userController.creatUser)
 routes.get('/users', userController.getUsers)
 routes.get('/users/:user_id', userController.getUserById)
+routes.delete('/users/:user_id', userController.deleteUserById)
 
-routes.post('/login', authenticate , LoginController.creatSession)
+routes.post('/login', LoginController.creatSession) 
 
 routes.post('/products', authenticate, ProductController.createProdutc)
 routes.get('/products', ProductController.getProducts)
