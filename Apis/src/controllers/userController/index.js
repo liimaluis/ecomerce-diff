@@ -1,5 +1,7 @@
 const { json } = require('express')
 const User = require('../../models/User')
+const bcryptjs = require('bcryptjs')
+const saltRounds = 10
 
 const userController = {
 
@@ -8,8 +10,11 @@ const userController = {
         const bodyData = req.body
 
         try {
-
-            const newUser = await User.create(bodyData)
+            const hashedPwd = await bcryptjs.hash(req.body.password, saltRounds)
+            const newUser = await User.create({
+                email: req.body.email,
+                password: hashedPwd
+            })
             return res.status(200).json(newUser)
 
         } catch(error){

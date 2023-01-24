@@ -27,12 +27,16 @@ const Schema = new mongoose.Schema({
         cartao:{
             number:{
                 type: Number,
+                required: true
             },
             cvv:{
                 type: Number,
+                required: true
             }
         }
     }
 })
+
+
 
 module.exports = mongoose.model('Cart', Schema)
